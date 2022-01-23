@@ -1,0 +1,622 @@
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+:root{overflow-y: scroll;scroll-behavior: smooth;}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f6f6f6;
+  color: #0a101a;
+}
+.container{
+  width: 80%;
+  margin:auto;
+}
+.flexContainer{
+  display: flex;
+  justify-content: space-between;
+}
+.displayFlex{
+  display: flex;
+}
+.blueBackground{
+  background-color: #0a101a;
+}
+.yellowBackground{
+  background-color: #edcf6c;
+}
+.yellowText{
+  color: #eed26e;
+}
+.lineHeight{
+  line-height: 1.5;
+}
+.boldText{
+  font-weight: bold;
+}
+.centeredText{
+  text-align: center;
+}
+.pointer:hover{
+  cursor: pointer;
+}
+
+/* TOP NAVIGATION */
+
+.header{
+  padding: 20px 0;
+}
+.hotLine2{
+  margin-left: 10px;
+}
+
+/* NAVIGATION MENU*/
+
+ .navigation{
+  background-color: #2b2a28;
+  padding: 40px 0;
+}
+.logoImage{
+  display: none;
+}
+.navigation-items{
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 0;
+}
+.item{
+  list-style: none;
+}
+.linkItem{
+  text-decoration: none;
+  font-size: 1rem;
+}
+.linkItem:hover {
+  padding-top: 5px;
+  border-top: 2px solid #eed26e;
+  transition: all 0.3s ease;
+}
+.burger{
+  display: none;
+}
+.burger div{
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* MAIN PAGE */
+
+#main-page{
+  padding: 150px 0 20px 0;
+}
+.logoImage1{
+  width: 400px;
+  display: block;
+}
+.heading1,.heading2,.heading3{
+  font-size: 3rem;
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+}
+.mySlides{
+  height: 250px;
+}
+.button1{
+  border: 2px solid #eed26e;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+.button1:hover{
+  cursor: pointer;
+  background-color: #a57c00;
+  border: 2px solid #a57c00;
+}
+.button2{
+  cursor: pointer;
+  background-color: inherit;
+  border: 2px solid #eed26e;
+  border-radius: 10px;
+  padding: 20px 25px;
+  font-size: 1rem;
+  margin-left: 5px;
+}
+.button2:hover{
+  cursor: pointer;
+  background-color: #a57c00;
+  border: 2px solid #a57c00;
+  color: #0a101a;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.features{
+  padding-top: 195px;
+}
+.features-heading{
+  font-weight: lighter;
+  margin: 3px 0;
+}
+
+/* O NAMA */
+
+#aboutUsSection{
+  padding-top: 100px;
+  background-color: #f6f6f6;
+}
+
+.aboutUsText{
+  font-size: 1rem;
+  font-weight:bold;
+  text-align: justify;
+}
+.about-us-image{
+  width: 100%;
+  margin-top: 70px;
+}
+.aboutUsSubtitle{
+  margin: 0;
+}
+.rightAlign{
+  text-align: right;
+}
+.space{
+  padding-bottom: 100px;
+}
+
+/* SERVICES */
+
+.naslovi{
+  font-size: 3rem;
+}
+.cardText{
+  padding: 30px;
+}
+.podesavanjeUsluga{
+  width: 30%;
+}
+.cardTextNaslov{
+  padding-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* POGREBNA OPREMA SECTION */
+
+#pogrebnaOpremaSection{
+  padding-top: 60px;
+}
+#pogrebnaOpremaSection .cardText{
+padding: 0 20%;
+}
+#pogrebnaOpremaSection img{
+  border-radius: 10px;
+  border: 2px solid #eed26e;
+  width:300px;
+  padding: 20px;
+}
+
+  /* LOKALI */
+
+#lokali{
+  padding: 100px 0;
+}
+#lokali h1{
+  font-size: 3rem;
+}
+#lokali p{
+  font-size: 1.5rem;
+}
+.linkLokali{
+  color: #0a101a;
+}
+.slideImage{
+  width: 80%;
+}
+.prevIcon, .nextIcon{
+  cursor: pointer;
+}
+.next, .prev{
+  margin: auto;
+}
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 4px;
+  opacity: 0.5;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  opacity: 1;
+}
+
+/* GALLERY */
+
+.imageInGallery{
+  transition: 1s;
+
+  width: 300px;
+}
+.imageInGallery:hover{
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+.linkDoSlika, .linkDoSlika1{
+  display: none;
+}
+.ImagesForPhone{
+  display: none;
+}
+.changeText{
+  padding: 10px;
+  width: 200px;
+  margin: auto;
+}
+
+/* CONTACT */
+
+#contact{
+
+}
+.form {
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  background-color: #0a101a;
+  color: #eed26e;
+
+}
+
+input[type=text], select {
+  width: 80%;
+  padding: 12px 20px;
+  text-align: center;
+  margin: 15px auto;
+  border: 1px solid #eed26e;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  color: #eed26e;
+  background-color: #0a101a;
+}
+
+input[type=email], select {
+  width: 80%;
+  padding: 14px 20px;
+  text-align: center;
+  margin: 15px auto;
+  border: 1px solid #eed26e;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  color: #eed26e;
+  background-color: #0a101a;
+}
+
+input[type=submit] {
+  width: 80%;
+  border: 2px solid #eed26e;
+  color: #eed26e;
+  padding: 14px 20px;
+  text-align: center;
+  margin: auto 15px auto;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #0a101a;
+}
+
+input[type=submit]:hover {
+  background-color: #eed26e;
+  color: #0a101a;
+}
+.information{
+  width: 40%;
+  text-align: center;
+  border-radius: 5px;
+  margin: auto;
+  background-color: #eed26e;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+
+.footer{
+  padding-top: 100px;
+}
+.footerLogo{
+  width: 90%;
+}
+.linkovi{
+  display: flex;
+  flex-direction: column;
+}
+.footer p{
+  border-left: 2px solid #eed26e;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+.copyRight{
+  padding: 50px 0 10px 0;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+}
+.fas{
+  color: #a57c00;
+  margin-bottom: 1rem;
+}
+.fas:hover{
+  color: #354353;
+}
+
+@media (max-width:1775px) {
+  .heading1{
+    width: 100%;
+  }
+}
+@media (max-width: 1620px) {
+  .heading1,.heading2,.heading3{
+    font-size: 2.5rem;
+  }
+}
+@media (max-width:1535px) {
+  .heading2{
+    width: 100%;
+  }
+}
+@media (max-width: 1432px) {
+  .logoImage{
+    width: 300px;
+  }
+  .footerLogo{
+    width: 300px;
+    margin-top: 30px;
+  }
+}
+@media (max-width:1290px) {
+  #pogrebnaOpremaSection .flexContainer{
+    flex-direction: column;
+  }
+}
+@media (max-width: 1272px) {
+  .heading1,.heading2,.heading3{
+    font-size: 2rem;
+  }
+  .about-us-image{
+    margin-top: 90px;
+  }
+  .logo{
+  display: none;
+  }
+
+}
+@media (max-width: 1110px) {
+  .logoImage{
+    width: 250px;
+  }
+  .main-page{
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .header{
+    display: none;
+ }
+ .burger{
+   display: block;
+  margin-top: 25px;
+ }
+ .navigation-items{
+   display: none;
+ }
+ .nav-active{
+   display:flex;
+   flex-direction: column;
+   text-align: center;
+   margin-top: 100px;
+ }
+ .toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+ }
+  .toggle .line2{
+    opacity: 0;
+ }
+  .toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+ }
+ .item{
+   margin-bottom: 15px;
+ }
+  .container{
+    width: 90%;
+  }
+  .logoImage{
+    display: block;
+    width: 90px;
+  }
+  .logoImage1{
+    display: none;
+  }
+  .heading3{
+    width: 100%;
+  }
+  .mySlides{
+    height: 100px;
+    width: 100%;
+  }
+  .navigation{
+    padding: 20px 0;
+  }
+  .features-heading{
+    display: none;
+  }
+  .about-us,.space{
+    flex-direction: column;
+    text-align: center;
+  }
+  .aboutUsText{
+    margin: 0;
+  }
+  .translate-img{
+    transform: translateY(100%);
+  }
+  .translate-text{
+    transform: translateY(-100%);
+  }
+  .bottomPaddingNone{
+    padding-bottom: 0;
+  }
+  .displayBlock{
+    flex-direction: column;
+  }
+  .podesavanjeUsluga{
+    width: 100%;
+  }
+  #servicesSection{
+    background-color: #0a101a;
+    padding-top: 80px;
+  }
+  #servicesSection .naslovi{
+    color: #eed26e;
+  }
+  .naslovi{
+    padding-bottom: 60px;
+  }
+  .slideImage{
+    width: 100%;
+  }
+  .form{
+    margin-bottom: 50px;
+    text-align: center;
+    width: 80%;
+
+  }
+  .information{
+    padding: 20px;
+    width: 80%;
+  }
+}
+@media (max-width:865px) {
+  .buttons{
+    margin-top: 20px;
+  }
+  .footerItemsResponsive{
+    flex-direction: column;
+    text-align: center;
+  }
+  .linkovi p{
+    border: none;
+  }
+  .linkovi h2{
+    border-bottom: 2px solid #eed26e;
+  }
+  .galleryWithImages{
+    display: none;
+  }
+  .ImagesForPhone{
+    display: flex;
+    flex-direction: column;
+  }
+  .linkDoSlika{
+    display: block;
+  }
+}
+@media (max-width: 460px) {
+  .button1,.button2{
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .heading1{
+    font-size: 1.5rem;
+  }
+  .about-us-image{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 300px;
+  }
+  .aboutUsSubtitle{
+    display: none;
+  }
+  .prevIcon,.nextIcon{
+    width: 30px;
+  }
+  .slideImage{
+    width: 150px;
+   }
+   .changeText{
+     width: 100px;
+   }
+  #lokali h1 {
+    font-size: 2rem;
+  }
+  .imageInGallery{
+    width: 200px;
+  }
+  .slideImage{
+    width: 250px;
+  }
+  #pogrebnaOpremaSection img{
+    width: 200px;
+  }
+}
+@media (max-width: 336px) {
+  .about-us-image{
+    display: none;
+  }
+  .translate-text{
+    transform: translateY(20%);
+  }
+  .cardTextNaslov{
+    font-size: 1.5rem;
+  }
+  #pogrebnaOpremaSection img{
+    width: 200px;
+  }
+  .sliderControl{
+    display: none;
+  }
+}
+@media (max-width: 310px) {
+  .heading2{
+    font-size: 1.5rem;
+  }
+  .naslovi{
+    font-size: 2rem;
+  }
+  .imageInGallery{
+    width: 150px;
+  }
+}
