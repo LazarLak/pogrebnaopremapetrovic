@@ -47,6 +47,16 @@ body{
 .pointer:hover{
   cursor: pointer;
 }
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
 
 /* TOP NAVIGATION */
 
@@ -363,7 +373,7 @@ input[type=submit]:hover {
   margin: 10px 0;
 }
 .copyRight{
-  padding: 50px 0 10px 0;
+  padding: 120px 0 10px 0;
 }
 #myBtn {
   display: none;
