@@ -46,6 +46,7 @@ body{
 }
 .pointer:hover{
   cursor: pointer;
+  color: #a57c00;
 }
 .reveal{
   position: relative;
