@@ -1,3 +1,5 @@
+//Burger meni
+
 const navSlide = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.navigation-items');
@@ -11,6 +13,7 @@ const navSlide = () => {
 }
 navSlide();
 
+//Efekat za scroll
 
 window.addEventListener('scroll', reveal);
 
@@ -31,6 +34,7 @@ function reveal(){
 }
 
 
+//SlideShow za main page i lokale
 
 var timer;
 
@@ -72,6 +76,7 @@ function showSlides(n) {
 
 }
 
+// Scroll to top dugme
 
 var mybutton = document.getElementById("myBtn");
 
@@ -85,11 +90,13 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// Na klik odvedi do vrha
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// Loading
 
 document.onreadystatechange = function () {
   var state = document.readyState
@@ -104,7 +111,7 @@ document.onreadystatechange = function () {
   }
 }
 
-
+//Prikazi slike
 function prikaziSlike() {
   document.getElementsByClassName("galleryWithImages")[0].style.display = "block";
   document.getElementsByClassName("ImagesForPhone")[0].style.display = "none";
@@ -112,6 +119,7 @@ function prikaziSlike() {
   document.getElementsByClassName("linkDoSlika1")[0].style.display = "block";
 }
 
+//Ukloni slike
 function smanjiSlike(){
   document.getElementsByClassName("galleryWithImages")[0].style.display = "none";
   document.getElementsByClassName("ImagesForPhone")[0].style.display = "block";
